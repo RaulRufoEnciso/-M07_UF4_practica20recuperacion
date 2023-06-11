@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'cataleg.apps.CatalegConfig',
     'carreto.apps.CarretoConfig',
     'comandes.apps.ComandesConfig',
+    'pagaments.apps.PagamentsConfig',
 
 
 ]
