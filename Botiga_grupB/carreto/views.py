@@ -15,3 +15,10 @@ def addProductsToCarreto(request):
         return Response(serializer.data)
     return Response("No existe ese producto")
 # Añadir productos al carro
+
+@api_view(['GET'])
+def showAllProductsInCarrito(request):
+    products = Carrito.objects.all()
+    serializer = CarritoSerializer(products, many=True)
+    return Response(serializer.data)
+# Ver productos del carro
