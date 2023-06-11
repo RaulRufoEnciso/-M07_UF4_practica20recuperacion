@@ -5,7 +5,6 @@ from rest_framework.response import Response
 from .models import Productos
 from .serializers import ProductosSerializer
 
-
 @api_view(['POST'])
 def addProducto(request):
     serializer = ProductosSerializer(data=request.data, many=False)
@@ -29,3 +28,10 @@ def updateProducto(request, pk):
 
 # Editar los productos en la tabla del catalogo
 
+@api_view(['DELETE'])
+def deleteProducto(request, pk):
+    product = Productos.objects.get(id=pk)
+    product.delete()
+    return Response("Producto eliminado del catalogo con exito")
+
+# Eliminar los productos en la tabla del catalogo
