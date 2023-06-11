@@ -3,7 +3,8 @@ from . import views
 
 #Rutas del cataleg
 urlpatterns = [
-   
+    path('', views.showAllProducts, name="producto"),
+    path('producto/<str:pk>/', views.showProductoById, name="productoId"),
     path('add-producto/', views.addProducto, name="add-producto"),
     path('update-producto/<str:pk>/', views.updateProducto, name="update-producto"),
     path('delete-producto/<str:pk>/', views.deleteProducto, name="delete-producto"),
