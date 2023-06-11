@@ -35,3 +35,24 @@ def cvc_valido(cvc):
 
 
 
+def pagar(request):
+    if request.method == 'POST':
+        numero_tarjeta = request.POST.get('numero_tarjeta')
+        fecha_caducidad = request.POST.get('fecha_caducidad')
+        cvc = request.POST.get('cvc')
+
+        #compobamos los datos de la tarjeta y realizar el pago simulado
+        if numero_tarjeta_valido(numero_tarjeta) and fecha_caducidad_valida(fecha_caducidad) and cvc_valido(cvc):
+            
+            # Los datos de la tarjeta son válidos, realizar el pago y guardar la compra en el historial
+            compra = Compra(numero_tarjeta=numero_tarjeta, fecha_caducidad=fecha_caducidad, cvc=cvc)
+            compra.save()
+
+         
+            messages.success(request, '¡Compra realizada!')
+            return redirect('historial_compras')  
+        else:
+           
+            messages.error(request, 'Los datos de la tarjeta no son válidos. Inténtalo de nuevo.')
+
+    return render(request, 'payment.html')
