@@ -59,6 +59,19 @@
 
 # Comandes
 
-![img_22.png](img_22.png)
-![img_23.png](img_23.png)
+<p>mostrar carritos finalizados</p>
+
+![img_25.png](img_25.png)
+
+<p>mostrar carritos no finalizados</p>
+
+![img_26.png](img_26.png)
+
+<p>Funcion que elimina una comanda</p>
+
+![img_27.png](img_27.png)
+![img_28.png](img_28.png)
+
+# Pagament
+
 
