@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
-from ..carreto.views import deleteProductoInCarritoById
+from carreto.views import deleteProductoInCarritoById
 
 urlpatterns = [
     path('historial-compras/', views.historial_compras, name='historial_compras'),
