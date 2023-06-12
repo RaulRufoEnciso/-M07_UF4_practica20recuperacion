@@ -1,0 +1,24 @@
+{% load static %}
+<html>
+<head>
+    <title>Tu título de página</title>
+    <!-- Aquí puedes incluir tus estilos CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1>Django web store</h1>
+    </header>
+    
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    
+
+    <footer>
+        <p>Derechos de autor &copy; 2023 Django Project</p>
+    </footer>
+</body>
+</html>

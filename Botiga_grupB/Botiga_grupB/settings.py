@@ -38,9 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    "cataleg.apps.CatalegConfig",
-    "carreto.apps.CarretoConfig",
+    'cataleg.apps.CatalegConfig',
+    'carreto.apps.CarretoConfig',
     'comandes.apps.ComandesConfig',
+    'pagaments.apps.PagamentsConfig',
+
 
 ]
 

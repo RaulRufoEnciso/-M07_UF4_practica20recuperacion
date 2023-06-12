@@ -1,0 +1,48 @@
+/* styles.css */
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Estilos para la barra de navegación */
+  nav {
+    background-color: #555;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  /* Estilos para el contenido principal */
+  main {
+    margin: 20px;
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
